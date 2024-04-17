@@ -1,6 +1,7 @@
 # PureCode.ai
 
 # Table of Contents
+
 - [PureCode.ai](#purecodeai)
 - [Table of Contents](#table-of-contents)
 - [Landing Page Thoughts](#landing-page-thoughts)
@@ -14,7 +15,7 @@
         - [Features Card Section (General)](#features-card-section-general)
         - [Features Card Section (Detail)](#features-card-section-detail)
         - [Pre-Generated Components Example Grid](#pre-generated-components-example-grid)
-        - [Testimonial Card Section](#testimonial-card-section)
+        - [Testimonial Card "Carousel"](#testimonial-card-carousel)
         - [Pricing Comparison Chart](#pricing-comparison-chart)
         - [FAQ Section](#faq-section)
       - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1)
@@ -46,12 +47,12 @@
 - Related: Suggest including meta_keywords tag to include additional keywords. (e.g `<meta name="keywords" content="UI, component generator, AI copilot, frontend copilot">`)
 - Suggest running site through [SEO optimizer](https://www.seoptimer.com/purecode.ai#recommendation)
 
-![](./images/SEO-optimizer-analysis.png)
+![](./images/seo-optimizer-analysis.png)
 
 - `<script id="hotjar-init-script" crossorigin="anonymous">(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:3719365,hjsv:6,hjdebug:false};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');</script>`
   - Suggest offloading 3rd party analytics scripts off the main thread and on to service workers to increase [PageSpeed Score](https://pagespeed.web.dev/analysis/https-purecode-ai/sn6qlitvei?form_factor=desktop) (e.g. Hotjar) by implementing [Partytown package](https://partytown.builder.io/how-does-partytown-work)
 
-![](./images/PageSpeedInsights.png)
+![](./images/page-speed-insights.png)
 
 - Run site through a ![semantic HTML inspector](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurecode.ai%2F) (might be a lot of noise and not worth the effort - just including it to be thorough)
 
@@ -63,7 +64,7 @@
 
 ##### `<header>` element
 
-![](./images/header-desktop.png)
+![](./images/header.png)
 
 - NitPicky: `Sign In` button is slow to render wrt to `Sign Up` button. I've only used Clerk once in a side-project, but I don't recall this being an inherent issue with the library.
 
@@ -80,11 +81,11 @@
 
 ##### Call-To-Action
 
-![](./images/call-to-action-desktop.png)
+![](./images/call-to-action.png)
 
 - StylisticBias: If the user clicks the `Generate` button without providing a prompt a feedback toast is presented to the user. Great! But the toast is sometimes hard to notice because it's background color and the background color of page is the same. Many ways to improve the UI here. One possible solution would be to add an emoji to the toast to make it pop more.
 
-![](./images/GenerateFeedbackToastLackContrast-UX-Improvement.gif)
+![](./images/generate-feedback-toast-lack-of-contrast-ux-improvement.gif)
 
 - Example of adding toast icon to enhance UX
 
@@ -96,19 +97,37 @@
 
 ##### Call-To-Action-Made-Up-Statistic (😅)
 
-- blah
+![](./images/cta-statistic.png)
 
 ##### Features Card Section (General)
 
+![](./images/features-card-general.png)
+
 ##### Features Card Section (Detail)
+
+![](./images/feature-01-detail.png)
+
+![](./images/feature-02-detail.png)
+
+![](./images/feature-03-detail.png)
+
+![](./images/feature-04-detail.png)
 
 ##### Pre-Generated Components Example Grid
 
-##### Testimonial Card Section
+![](./images//components-example-grid.png)
+
+##### Testimonial Card "Carousel"
+
+![](./images/testimonial-card-carousel.png)
 
 ##### Pricing Comparison Chart
 
+![](./images/pricing-comparison-chart.png)
+
 ##### FAQ Section
+
+![](./images/faq.png)
 
 #### Tablet (768px viewport - iPadMini)[^1]
 
@@ -131,5 +150,4 @@
 # VSCode Extension Thoughts
 
 [^1]: Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - I would be willing to explore in further detail if requested
-
-[^2]: For sake of brevity, I will avoid any nit-picky stylist observations and only focus on bugs in the UI/UX - again I am willing to explore in detail upon request 
+[^2]: For sake of brevity, I will avoid any nit-picky stylist observations and only focus on bugs in the UI/UX - again I am willing to explore in detail upon request
