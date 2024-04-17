@@ -1,24 +1,26 @@
 # PureCode.ai
 
+# Table of Contents
 - [PureCode.ai](#purecodeai)
+- [Table of Contents](#table-of-contents)
 - [Landing Page Thoughts](#landing-page-thoughts)
-  - [`<head>` element comments](#head-element-comments)
-  - [`<body>` element comments](#body-element-comments)
+  - [`<head>` element](#head-element)
+  - [`<body>` element](#body-element)
     - [Unauthenticated User](#unauthenticated-user)
-      - [Desktop (1280px viewport - MacBook Air MX) - top to bottom page analysis](#desktop-1280px-viewport---macbook-air-mx---top-to-bottom-page-analysis)
-        - [`<header>` element comments](#header-element-comments)
-        - [Call-To-Action comments](#call-to-action-comments)
-        - [Call-To-Action-Made-Up-Statistic (😅) comments](#call-to-action-made-up-statistic--comments)
-        - [Features Card Section (General) comments](#features-card-section-general-comments)
-        - [Features Card Section (Detail) comments](#features-card-section-detail-comments)
-        - [Pre-Generated Component Example Grid comments](#pre-generated-component-example-grid-comments)
-        - [Testimonial Card Section comments](#testimonial-card-section-comments)
-        - [Pricing Comparison Chart comments](#pricing-comparison-chart-comments)
-        - [FAQ Comments](#faq-comments)
+      - [Desktop (1440px viewport - MacBook Air MX) - top to bottom page analysis](#desktop-1440px-viewport---macbook-air-mx---top-to-bottom-page-analysis)
+        - [`<header>` element](#header-element)
+        - [Call-To-Action](#call-to-action)
+        - [Call-To-Action-Made-Up-Statistic (😅)](#call-to-action-made-up-statistic-)
+        - [Features Card Section (General)](#features-card-section-general)
+        - [Features Card Section (Detail)](#features-card-section-detail)
+        - [Pre-Generated Components Example Grid](#pre-generated-components-example-grid)
+        - [Testimonial Card Section](#testimonial-card-section)
+        - [Pricing Comparison Chart](#pricing-comparison-chart)
+        - [FAQ Section](#faq-section)
       - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1)
       - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1)
     - [Authenticated User](#authenticated-user)
-      - [Desktop (1400px viewport - MacBookPro M1 Pro)\[^2\]](#desktop-1400px-viewport---macbookpro-m1-pro2)
+      - [Desktop (1440px viewport - MacBook Air MX)\[^2\]](#desktop-1440px-viewport---macbook-air-mx2)
       - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1-1)
       - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1-1)
   - [General Positive Aspects of Landing Page (my bias - _strong opinions, weakly held_)](#general-positive-aspects-of-landing-page-my-bias---strong-opinions-weakly-held)
@@ -28,7 +30,7 @@
 
 # Landing Page Thoughts
 
-## `<head>` element comments
+## `<head>` element
 
 - `<link rel="preload" as="image" href="/img/project_table_section_dark.png">`
   - Suggest converting image to modern `.webp` format to align with other images on landing page and improve SEO score (included image conversion. see `images` directory; 20% size reduction vs `.png`, lossless conversion)
@@ -53,13 +55,13 @@
 
 - Run site through a ![semantic HTML inspector](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurecode.ai%2F) (might be a lot of noise and not worth the effort - just including it to be thorough)
 
-## `<body>` element comments
+## `<body>` element
 
 ### Unauthenticated User
 
-#### Desktop (1280px viewport - MacBook Air MX) - top to bottom page analysis
+#### Desktop (1440px viewport - MacBook Air MX) - top to bottom page analysis
 
-##### `<header>` element comments
+##### `<header>` element
 
 ![](./images/header-desktop.png)
 
@@ -76,7 +78,7 @@
 
 ![](./images/vercel-authentication-button-hover-styles.gif)
 
-##### Call-To-Action comments
+##### Call-To-Action
 
 ![](./images/call-to-action-desktop.png)
 
@@ -92,19 +94,19 @@
 
 ![](./images/prompt-field-focus-state-border-highlight.png)
 
-##### Call-To-Action-Made-Up-Statistic (😅) comments
+##### Call-To-Action-Made-Up-Statistic (😅)
 
-##### Features Card Section (General) comments
+##### Features Card Section (General)
 
-##### Features Card Section (Detail) comments
+##### Features Card Section (Detail)
 
-##### Pre-Generated Component Example Grid comments
+##### Pre-Generated Components Example Grid
 
-##### Testimonial Card Section comments
+##### Testimonial Card Section
 
-##### Pricing Comparison Chart comments
+##### Pricing Comparison Chart
 
-##### FAQ Comments
+##### FAQ Section
 
 #### Tablet (768px viewport - iPadMini)[^1]
 
@@ -112,7 +114,7 @@
 
 ### Authenticated User
 
-#### Desktop (1400px viewport - MacBookPro M1 Pro)[^2]
+#### Desktop (1440px viewport - MacBook Air MX)[^2]
 
 #### Tablet (768px viewport - iPadMini)[^1]
 
