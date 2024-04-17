@@ -18,6 +18,7 @@
         - [Testimonial Card "Carousel"](#testimonial-card-carousel)
         - [Pricing Comparison Chart](#pricing-comparison-chart)
         - [FAQ Section](#faq-section)
+      - [Miscellaneous](#miscellaneous)
       - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1)
       - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1)
     - [Authenticated User](#authenticated-user)
@@ -83,7 +84,7 @@
 
 ![](./images/call-to-action.png)
 
-- StylisticBias: If the user clicks the `Generate` button without providing a prompt a feedback toast is presented to the user. Great! But the toast is sometimes hard to notice because it's background color and the background color of page is the same. Many ways to improve the UI here. One possible solution would be to add an emoji to the toast to make it pop more.
+- StylisticBias 💃: If the user clicks `Generate` button without providing a prompt a feedback toast is presented to the user. Great! The toast is, however, some times difficult to notice because its background-color and the background-color of page is the same (toast border styling is the sole source of contrast here). There are multiple valid approaches to improve the UI here. One possible solution would be to add an emoji to the toast text in order to make it pop more and draw the user's eye towards it.
 
 ![](./images/generate-feedback-toast-lack-of-contrast-ux-improvement.gif)
 
@@ -91,17 +92,38 @@
 
 ![](./images/generate-feedback-toast-improvement-example.png)
 
-- UX-Kudos 👍: I really the focus styling on the prompt field when the user clicks on the `Generate` button but failed to provide a prompt. Nice touch!
+- UX-Kudos 👍: I like the _prompt field focus styling_ that is applied when the user clicks on the `Generate` button without providing a prompt. Nice touch! 💋
 
 ![](./images/prompt-field-focus-state-border-highlight.png)
+
+- Bug 🐛: It's not possible to `Save` a custom theme if the user is not authenticated.
+  - Solution: hide the `Theme` button until the user is authenticated or prompt the user to authenticated via ClerkAuth when user clicks `Save` theme button - similar to the UX experienced when a user clicks on an example prompt.
+- Confusing UX 😕: It's not immediately apparent that the user needs to supply a value in the `name` field for the custom theme `Save` button to activate.
+  - Suggest adding a tooltip that indicated the user must provide a name field when the custom theme `Save` button is hovered or on attempt to click disable button we could trigger another feedback toast.
+  - More important is that this feature doesn't work for unauthenticated user's (which makes sense, but feels broken nonetheless - see Solution above)
+
+![](./images/custom-theme-tab-panel-not-functional-if-user-is-not-authenticated.gif)
+
+- Bug 🐛 (or stylist-bias - very weakly held opinion here): When user clicks on a template prompt, they are prompted to authenticate via the Clerk modal. Great! However, if the user decides to navigate click the browser's back button the modal persist across page views which leads to a confusing UX (aside from [reddit](https://www.reddit.com/) - which isn't known for great ux - I can't find another site on the web that has a similar auth modal behavior on browser navigation). Most sites seem to prefer a full-page login/sign-page over a floating modal. I will admit this might not be a "bug", just a bit odd, but certainly low priority.
+  - Expectation: I would expect the authentication modal to vanish upon `Back` browser navigation.
+
+![](./images/clerk-auth-modal-persist-across-page-navigation-bug.gif)
+
+- Minor UX Quirk 🫠: The only way to dismiss the authentication modal is for the user to hit the escape key. It would be nice if there was an explicit close (X) button on the modal or if the modal vanished if the user clicked outside of the modal frame. See reddit authentication modal.
+
+![](./images/reddit-auth-modal-explicit-close-x-button.png)
 
 ##### Call-To-Action-Made-Up-Statistic (😅)
 
 ![](./images/cta-statistic.png)
 
+- No constructive comment. Ship it! 🚚
+
 ##### Features Card Section (General)
 
 ![](./images/features-card-general.png)
+
+- Only one comment (nit-picky). Why doesn't the wide-card (`Generate components from text descriptions`) animate and grow on hover and provide a `pointer: cursor` to indicate that the entire card is clickable? Seems inconsistent. In function, it's no different than the cards that link to detail feature card 02 through 04. I do notice that the `cursor: pointer` shows up when a user hover over the example prompt rows (nice little left-right animation of the prompts - fancy)
 
 ##### Features Card Section (Detail)
 
@@ -113,21 +135,37 @@
 
 ![](./images/feature-04-detail.png)
 
+- No comment aside from a suggestion to add some subtle animation to the blue button on hover. Ship it! 🚚
+
 ##### Pre-Generated Components Example Grid
 
 ![](./images//components-example-grid.png)
+
+- Looks great. Ship it.
 
 ##### Testimonial Card "Carousel"
 
 ![](./images/testimonial-card-carousel.png)
 
+- No comment on desktop, but on smaller viewports it would be nice if the "carousel" was in fact functional (i.e. having the cards actually slide left-right when the user swipes across the carousel row)
+
+![](./images/potemkin-testimonial-carousel.png)
+
 ##### Pricing Comparison Chart
 
 ![](./images/pricing-comparison-chart.png)
 
+- Ship it. Love it. Buttons have hover animations. ❤️
+
 ##### FAQ Section
 
 ![](./images/faq.png)
+
+- no comment
+
+#### Miscellaneous
+
+- Final comment: Where's a footer? Privacy Policy, Terms of Service, etc. Low priority I'm sure because the landing page is not the product. 👍
 
 #### Tablet (768px viewport - iPadMini)[^1]
 
@@ -137,17 +175,27 @@
 
 #### Desktop (1440px viewport - MacBook Air MX)[^2]
 
+- Comments to come in a few hours
+
 #### Tablet (768px viewport - iPadMini)[^1]
 
 #### Mobile (430px viewport - iPhone 15 Pro Max)[^1]
 
 ## General Positive Aspects of Landing Page (my bias - _strong opinions, weakly held_)
 
+- Stay tuned! Quick words that pop into my head on first impression. Modern. Great dark color choices and use of gradients.
+- 98% mobile responsive at first glance
+
 ## Bugs/Possible Areas to Improve/General Critiques (my bias - _strong opinions, weakly held_)
 
+- More to come here soon.
+
 # Product Thoughts (web)
+
+- The meat and potatoes and where I would have been given feedback but when I first starting poking around I was unable to make use of the generative powers of the app because the Azure backend was generating a `502 - Bad Gateway` error that rendered the app totally unusable.
+- ![](./images/bad-gateway-network-error-502.png)
 
 # VSCode Extension Thoughts
 
 [^1]: Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - I would be willing to explore in further detail if requested
-[^2]: For sake of brevity, I will avoid any nit-picky stylist observations and only focus on bugs in the UI/UX - again I am willing to explore in detail upon request
+[^2]: For sake of brevity, I will avoid any nit-picky stylist observations and only focus on bugs in the UI/UX - again I am willing to explore in more detail upon request
