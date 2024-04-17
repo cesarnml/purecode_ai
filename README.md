@@ -32,7 +32,7 @@
 
 ## `<head>` element
 
-- `<link rel="preload" as="image" href="/img/project_table_section_dark.png">`{.html}
+- `<link rel="preload" as="image" href="/img/project_table_section_dark.png">`
   - Suggest converting image to modern `.webp` format to align with other images on landing page and improve SEO score (included image conversion. see `images` directory; 20% size reduction vs `.png`, lossless conversion)
 
 ![](./images/project_table_section_dark.webp)
