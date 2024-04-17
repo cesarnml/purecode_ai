@@ -9,12 +9,19 @@
         - [Desktop (1280 viewport - MacBook Air MX) - top to bottom page comments](#desktop-1280-viewport---macbook-air-mx---top-to-bottom-page-comments)
           - [`<header>` element comments](#header-element-comments)
           - [Call-To-Action comments](#call-to-action-comments)
-        - [Tablet (768px viewport - iPadMini)](#tablet-768px-viewport---ipadmini)
-        - [Mobile (430px viewport - iPhone 15 Pro Max)](#mobile-430px-viewport---iphone-15-pro-max)
+          - [Call-To-Action-Made-Up-Statistic (😅) comments](#call-to-action-made-up-statistic--comments)
+          - [Features Card Section (General) comments](#features-card-section-general-comments)
+          - [Features Card Section (Detail) comments](#features-card-section-detail-comments)
+          - [Pre-Generated Component Example Grid comments](#pre-generated-component-example-grid-comments)
+          - [Testimonial Card Section comments](#testimonial-card-section-comments)
+          - [Pricing Comparison Chart comments](#pricing-comparison-chart-comments)
+          - [FAQ Comments](#faq-comments)
+        - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1)
+        - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1)
       - [Authenticated User](#authenticated-user)
-        - [Desktop (1400px viewport - MacBookPro M1 Pro)](#desktop-1400px-viewport---macbookpro-m1-pro)
-        - [Tablet (768px viewport - iPadMini)](#tablet-768px-viewport---ipadmini-1)
-        - [Mobile (430px viewport - iPhone 15 Pro Max)](#mobile-430px-viewport---iphone-15-pro-max-1)
+        - [Desktop (1400px viewport - MacBookPro M1 Pro)\[^2\]](#desktop-1400px-viewport---macbookpro-m1-pro2)
+        - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1-1)
+        - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1-1)
   - [General Positive Aspects of Landing Page (my bias - _strong opinions, weakly held_)](#general-positive-aspects-of-landing-page-my-bias---strong-opinions-weakly-held)
   - [Bugs/Possible Areas to Improve/General Critiques (my bias - _strong opinions, weakly held_)](#bugspossible-areas-to-improvegeneral-critiques-my-bias---strong-opinions-weakly-held)
 - [Product Thoughts (web)](#product-thoughts-web)
@@ -76,25 +83,43 @@
 
 ![](./images/call-to-action-desktop.png)
 
-##### Tablet (768px viewport - iPadMini)
+- StylisticBias: If the user clicks the `Generate` button without providing a prompt a feedback toast is presented to the user. Great! But the toast is sometimes hard to notice because it's background color and the background color of page is the same. Many ways to improve the UI here. One possible solution would be to add an emoji to the toast to make it pop more.
 
-- Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - would be willing to explore in further detail if requested
+![](./images/GenerateFeedbackToastLackContrast-UX-Improvement.gif)
 
-##### Mobile (430px viewport - iPhone 15 Pro Max)
+- Example of adding toast icon to enhance UX
 
-- Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - would be willing to explore in further detail if requested
+![](./images/generate-feedback-toast-improvement-example.png)
+
+- UX-Kudos 👍: I really the focus styling on the prompt field when the user clicks on the `Generate` button but failed to provide a prompt. Nice touch!
+
+![](./images/prompt-field-focus-state-border-highlight.png)
+
+###### Call-To-Action-Made-Up-Statistic (😅) comments
+
+###### Features Card Section (General) comments
+
+###### Features Card Section (Detail) comments
+
+###### Pre-Generated Component Example Grid comments
+
+###### Testimonial Card Section comments
+
+###### Pricing Comparison Chart comments
+
+###### FAQ Comments
+
+##### Tablet (768px viewport - iPadMini)[^1]
+
+##### Mobile (430px viewport - iPhone 15 Pro Max)[^1]
 
 #### Authenticated User
 
-##### Desktop (1400px viewport - MacBookPro M1 Pro)
+##### Desktop (1400px viewport - MacBookPro M1 Pro)[^2]
 
-##### Tablet (768px viewport - iPadMini)
+##### Tablet (768px viewport - iPadMini)[^1]
 
-- Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - would be willing to explore in further detail if requested
-
-##### Mobile (430px viewport - iPhone 15 Pro Max)
-
-- Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - would be willing to explore in further detail if requested
+##### Mobile (430px viewport - iPhone 15 Pro Max)[^1]
 
 ## General Positive Aspects of Landing Page (my bias - _strong opinions, weakly held_)
 
@@ -103,3 +128,7 @@
 # Product Thoughts (web)
 
 # VSCode Extension Thoughts
+
+[^1]: Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - would be willing to explore in further detail if requested
+
+[^2]: For brevity I will avoid any nit-picky stylist observations and only focus on bugs in the UI. - again I am willing to explore in detail upon request 

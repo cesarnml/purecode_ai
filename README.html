@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="purecodeai">PureCode.ai</h1>
+<ul>
+<li><a href="#purecodeai">PureCode.ai</a></li>
+<li><a href="#landing-page-thoughts">Landing Page Thoughts</a>
+<ul>
+<li><a href="#general-comments">General Comments</a>
+<ul>
+<li><a href="#head-element-comments"><code>&lt;head&gt;</code> element comments</a></li>
+<li><a href="#body-element-comments"><code>&lt;body&gt;</code> element comments</a>
+<ul>
+<li><a href="#unauthenticated-user">Unauthenticated User</a>
+<ul>
+<li><a href="#desktop-1280-viewport---macbook-air-mx---top-to-bottom-page-comments">Desktop (1280 viewport - MacBook Air MX) - top to bottom page comments</a>
+<ul>
+<li><a href="#header-element-comments"><code>&lt;header&gt;</code> element comments</a></li>
+<li><a href="#call-to-action-comments">Call-To-Action comments</a></li>
+<li><a href="#call-to-action-made-up-statistic--comments">Call-To-Action-Made-Up-Statistic (😅) comments</a></li>
+<li><a href="#features-card-section-general-comments">Features Card Section (General) comments</a></li>
+<li><a href="#features-card-section-detail-comments">Features Card Section (Detail) comments</a></li>
+<li><a href="#pre-generated-component-example-grid-comments">Pre-Generated Component Example Grid comments</a></li>
+<li><a href="#testimonial-card-section-comments">Testimonial Card Section comments</a></li>
+<li><a href="#pricing-comparison-chart-comments">Pricing Comparison Chart comments</a></li>
+<li><a href="#faq-comments">FAQ Comments</a></li>
+</ul>
+</li>
+<li><a href="#tablet-768px-viewport---ipadmini1">Tablet (768px viewport - iPadMini)[^1]</a></li>
+<li><a href="#mobile-430px-viewport---iphone-15-pro-max1">Mobile (430px viewport - iPhone 15 Pro Max)[^1]</a></li>
+</ul>
+</li>
+<li><a href="#authenticated-user">Authenticated User</a>
+<ul>
+<li><a href="#desktop-1400px-viewport---macbookpro-m1-pro2">Desktop (1400px viewport - MacBookPro M1 Pro)[^2]</a></li>
+<li><a href="#tablet-768px-viewport---ipadmini1-1">Tablet (768px viewport - iPadMini)[^1]</a></li>
+<li><a href="#mobile-430px-viewport---iphone-15-pro-max1-1">Mobile (430px viewport - iPhone 15 Pro Max)[^1]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#general-positive-aspects-of-landing-page-my-bias---strong-opinions-weakly-held">General Positive Aspects of Landing Page (my bias - <em>strong opinions, weakly held</em>)</a></li>
+<li><a href="#bugspossible-areas-to-improvegeneral-critiques-my-bias---strong-opinions-weakly-held">Bugs/Possible Areas to Improve/General Critiques (my bias - <em>strong opinions, weakly held</em>)</a></li>
+</ul>
+</li>
+<li><a href="#product-thoughts-web">Product Thoughts (web)</a></li>
+<li><a href="#vscode-extension-thoughts">VSCode Extension Thoughts</a></li>
+</ul>
+<h1 id="landing-page-thoughts">Landing Page Thoughts</h1>
+<h2 id="general-comments">General Comments</h2>
+<h3 id="head-element-comments"><code>&lt;head&gt;</code> element comments</h3>
+<ul>
+<li><code>&lt;link rel=&quot;preload&quot; as=&quot;image&quot; href=&quot;/img/project_table_section_dark.png&quot;&gt;</code>
+<ul>
+<li>Suggest converting image to modern <code>.webp</code> format to align with other images on landing page and improve SEO score (included image conversion. see <code>images</code> directory; 20% size reduction vs <code>.png</code>, lossless conversion)</li>
+</ul>
+</li>
+</ul>
+<p><img src="./images/project_table_section_dark.webp" alt=""></p>
+<ul>
+<li><code>&lt;meta name=&quot;description&quot; content=&quot;A simple and powerful frontend AI copilot for the web.&quot;&gt;</code>
+<ul>
+<li>Currently when I google &quot;frontend ui component ai generator copilot&quot; - the friendliest keywords I could mash together - <code>purecode.ai</code> shows up as the 28th link</li>
+</ul>
+</li>
+</ul>
+<p><img src="./images/purecode-ai-28th-link.png" alt=""></p>
+<ul>
+<li>Suggest optimizing meta<em>description tag to include more keywords to move up SEO (e.g. _A simple and powerful frontend UI component generator for the web powered by AI copilot.</em>)</li>
+<li>Related: Suggest including meta_keywords tag to include additional keywords. (e.g <code>&lt;meta name=&quot;keywords&quot; content=&quot;UI, component generator, AI copilot, frontend copilot&quot;&gt;</code>)</li>
+<li>Suggest running site through <a href="https://www.seoptimer.com/purecode.ai#recommendation">SEO optimizer</a></li>
+</ul>
+<p><img src="./images/SEO-optimizer-analysis.png" alt=""></p>
+<ul>
+<li><code>&lt;script id=&quot;hotjar-init-script&quot; crossorigin=&quot;anonymous&quot;&gt;(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:3719365,hjsv:6,hjdebug:false};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');&lt;/script&gt;</code>
+<ul>
+<li>Suggest offloading 3rd party analytics scripts off the main thread and on to service workers to increase <a href="https://pagespeed.web.dev/analysis/https-purecode-ai/sn6qlitvei?form_factor=desktop">PageSpeed Score</a> (e.g. Hotjar) by implementing <a href="https://partytown.builder.io/how-does-partytown-work">Partytown package</a></li>
+</ul>
+</li>
+</ul>
+<p><img src="./images/PageSpeedInsights.png" alt=""></p>
+<ul>
+<li>Run site through a <img src="https://validator.w3.org/nu/?doc=https://purecode.ai/" alt="semantic HTML inspector"> (might be a lot of noise and not worth the effort - just including it to be thorough)</li>
+</ul>
+<h3 id="body-element-comments"><code>&lt;body&gt;</code> element comments</h3>
+<h4 id="unauthenticated-user">Unauthenticated User</h4>
+<h5 id="desktop-1280-viewport---macbook-air-mx---top-to-bottom-page-comments">Desktop (1280 viewport - MacBook Air MX) - top to bottom page comments</h5>
+<h6 id="header-element-comments"><code>&lt;header&gt;</code> element comments</h6>
+<p><img src="./images/header-desktop.png" alt=""></p>
+<ul>
+<li>NitPicky: <code>Sign In</code> button is slow to render wrt to <code>Sign Up</code> button. I've only used Clerk once in a side-project, but I don't recall this being an inherent issue with the library.</li>
+</ul>
+<p><img src="./images/sign-in-button-slow-render.gif" alt=""></p>
+<ul>
+<li>NitPicky: <code>Sign In</code> font-sze is noticeably larger (1rem vs 0.875rem) than <code>Sign Up</code> font - minor point but I can't seem to justify the inconsistency as a prudent style choice (most likely overlooked - again ... nit-picky)
+<ul>
+<li>I fixed the inconsistency below by changing <code>Sign In</code> font-size to 0.875rem</li>
+</ul>
+</li>
+</ul>
+<p><img src="./images/sign-in-sign-up-same-font-size.png" alt=""></p>
+<ul>
+<li>NitPicky and EasyFix: The <code>Sign In</code> and <code>Sign Up</code> buttons would benefit from hover styles to enhance UX (see <code>vercel.com</code> gif below)</li>
+</ul>
+<p><img src="./images/vercel-authentication-button-hover-styles.gif" alt=""></p>
+<h6 id="call-to-action-comments">Call-To-Action comments</h6>
+<p><img src="./images/call-to-action-desktop.png" alt=""></p>
+<ul>
+<li>StylisticBias: If the user clicks the <code>Generate</code> button without providing a prompt a feedback toast is presented to the user. Great! But the toast is sometimes hard to notice because it's background color and the background color of page is the same. Many ways to improve the UI here. One possible solution would be to add an emoji to the toast to make it pop more.</li>
+</ul>
+<p><img src="./images/GenerateFeedbackToastLackContrast-UX-Improvement.gif" alt=""></p>
+<ul>
+<li>Example of adding toast icon to enhance UX</li>
+</ul>
+<p><img src="./images/generate-feedback-toast-improvement-example.png" alt=""></p>
+<ul>
+<li>UX-Kudos 👍: I really the focus styling on the prompt field when the user clicks on the <code>Generate</code> button but failed to provide a prompt. Nice touch!</li>
+</ul>
+<p><img src="./images/prompt-field-focus-state-border-highlight.png" alt=""></p>
+<h6 id="call-to-action-made-up-statistic-%F0%9F%98%85-comments">Call-To-Action-Made-Up-Statistic (😅) comments</h6>
+<h6 id="features-card-section-general-comments">Features Card Section (General) comments</h6>
+<h6 id="features-card-section-detail-comments">Features Card Section (Detail) comments</h6>
+<h6 id="pre-generated-component-example-grid-comments">Pre-Generated Component Example Grid comments</h6>
+<h6 id="testimonial-card-section-comments">Testimonial Card Section comments</h6>
+<h6 id="pricing-comparison-chart-comments">Pricing Comparison Chart comments</h6>
+<h6 id="faq-comments">FAQ Comments</h6>
+<h5 id="tablet-768px-viewport---ipadmini1">Tablet (768px viewport - iPadMini)[^1]</h5>
+<h5 id="mobile-430px-viewport---iphone-15-pro-max1">Mobile (430px viewport - iPhone 15 Pro Max)[^1]</h5>
+<h4 id="authenticated-user">Authenticated User</h4>
+<h5 id="desktop-1400px-viewport---macbookpro-m1-pro2">Desktop (1400px viewport - MacBookPro M1 Pro)[^2]</h5>
+<h5 id="tablet-768px-viewport---ipadmini1">Tablet (768px viewport - iPadMini)[^1]</h5>
+<h5 id="mobile-430px-viewport---iphone-15-pro-max1">Mobile (430px viewport - iPhone 15 Pro Max)[^1]</h5>
+<h2 id="general-positive-aspects-of-landing-page-my-bias---strong-opinions-weakly-held">General Positive Aspects of Landing Page (my bias - <em>strong opinions, weakly held</em>)</h2>
+<h2 id="bugspossible-areas-to-improvegeneral-critiques-my-bias---strong-opinions-weakly-held">Bugs/Possible Areas to Improve/General Critiques (my bias - <em>strong opinions, weakly held</em>)</h2>
+<h1 id="product-thoughts-web">Product Thoughts (web)</h1>
+<h1 id="vscode-extension-thoughts">VSCode Extension Thoughts</h1>
+<p>[^1]: Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - would be willing to explore in further detail if requested</p>
+<p>[^2]: For brevity I will avoid any nit-picky stylist observations and only focus on bugs in the UI. - again I am willing to explore in detail upon request</p>
+
+</body>
+</html>
