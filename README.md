@@ -126,6 +126,6 @@
 
 # VSCode Extension Thoughts
 
-[^1]: Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - would be willing to explore in further detail if requested
+[^1]: Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - I would be willing to explore in further detail if requested
 
-[^2]: For brevity I will avoid any nit-picky stylist observations and only focus on bugs in the UI. - again I am willing to explore in detail upon request 
+[^2]: For sake of brevity, I will avoid any nit-picky stylist observations and only focus on bugs in the UI/UX - again I am willing to explore in detail upon request 
