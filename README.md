@@ -2,26 +2,25 @@
 
 - [PureCode.ai](#purecodeai)
 - [Landing Page Thoughts](#landing-page-thoughts)
-  - [General Comments](#general-comments)
-    - [`<head>` element comments](#head-element-comments)
-    - [`<body>` element comments](#body-element-comments)
-      - [Unauthenticated User](#unauthenticated-user)
-        - [Desktop (1280 viewport - MacBook Air MX) - top to bottom page comments](#desktop-1280-viewport---macbook-air-mx---top-to-bottom-page-comments)
-          - [`<header>` element comments](#header-element-comments)
-          - [Call-To-Action comments](#call-to-action-comments)
-          - [Call-To-Action-Made-Up-Statistic (😅) comments](#call-to-action-made-up-statistic--comments)
-          - [Features Card Section (General) comments](#features-card-section-general-comments)
-          - [Features Card Section (Detail) comments](#features-card-section-detail-comments)
-          - [Pre-Generated Component Example Grid comments](#pre-generated-component-example-grid-comments)
-          - [Testimonial Card Section comments](#testimonial-card-section-comments)
-          - [Pricing Comparison Chart comments](#pricing-comparison-chart-comments)
-          - [FAQ Comments](#faq-comments)
-        - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1)
-        - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1)
-      - [Authenticated User](#authenticated-user)
-        - [Desktop (1400px viewport - MacBookPro M1 Pro)\[^2\]](#desktop-1400px-viewport---macbookpro-m1-pro2)
-        - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1-1)
-        - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1-1)
+  - [`<head>` element comments](#head-element-comments)
+  - [`<body>` element comments](#body-element-comments)
+    - [Unauthenticated User](#unauthenticated-user)
+      - [Desktop (1280px viewport - MacBook Air MX) - top to bottom page analysis](#desktop-1280px-viewport---macbook-air-mx---top-to-bottom-page-analysis)
+        - [`<header>` element comments](#header-element-comments)
+        - [Call-To-Action comments](#call-to-action-comments)
+        - [Call-To-Action-Made-Up-Statistic (😅) comments](#call-to-action-made-up-statistic--comments)
+        - [Features Card Section (General) comments](#features-card-section-general-comments)
+        - [Features Card Section (Detail) comments](#features-card-section-detail-comments)
+        - [Pre-Generated Component Example Grid comments](#pre-generated-component-example-grid-comments)
+        - [Testimonial Card Section comments](#testimonial-card-section-comments)
+        - [Pricing Comparison Chart comments](#pricing-comparison-chart-comments)
+        - [FAQ Comments](#faq-comments)
+      - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1)
+      - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1)
+    - [Authenticated User](#authenticated-user)
+      - [Desktop (1400px viewport - MacBookPro M1 Pro)\[^2\]](#desktop-1400px-viewport---macbookpro-m1-pro2)
+      - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1-1)
+      - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1-1)
   - [General Positive Aspects of Landing Page (my bias - _strong opinions, weakly held_)](#general-positive-aspects-of-landing-page-my-bias---strong-opinions-weakly-held)
   - [Bugs/Possible Areas to Improve/General Critiques (my bias - _strong opinions, weakly held_)](#bugspossible-areas-to-improvegeneral-critiques-my-bias---strong-opinions-weakly-held)
 - [Product Thoughts (web)](#product-thoughts-web)
@@ -29,9 +28,7 @@
 
 # Landing Page Thoughts
 
-## General Comments
-
-### `<head>` element comments
+## `<head>` element comments
 
 - `<link rel="preload" as="image" href="/img/project_table_section_dark.png">`
   - Suggest converting image to modern `.webp` format to align with other images on landing page and improve SEO score (included image conversion. see `images` directory; 20% size reduction vs `.png`, lossless conversion)
@@ -56,13 +53,13 @@
 
 - Run site through a ![semantic HTML inspector](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurecode.ai%2F) (might be a lot of noise and not worth the effort - just including it to be thorough)
 
-### `<body>` element comments
+## `<body>` element comments
 
-#### Unauthenticated User
+### Unauthenticated User
 
-##### Desktop (1280 viewport - MacBook Air MX) - top to bottom page comments
+#### Desktop (1280px viewport - MacBook Air MX) - top to bottom page analysis
 
-###### `<header>` element comments
+##### `<header>` element comments
 
 ![](./images/header-desktop.png)
 
@@ -79,7 +76,7 @@
 
 ![](./images/vercel-authentication-button-hover-styles.gif)
 
-###### Call-To-Action comments
+##### Call-To-Action comments
 
 ![](./images/call-to-action-desktop.png)
 
@@ -95,31 +92,31 @@
 
 ![](./images/prompt-field-focus-state-border-highlight.png)
 
-###### Call-To-Action-Made-Up-Statistic (😅) comments
+##### Call-To-Action-Made-Up-Statistic (😅) comments
 
-###### Features Card Section (General) comments
+##### Features Card Section (General) comments
 
-###### Features Card Section (Detail) comments
+##### Features Card Section (Detail) comments
 
-###### Pre-Generated Component Example Grid comments
+##### Pre-Generated Component Example Grid comments
 
-###### Testimonial Card Section comments
+##### Testimonial Card Section comments
 
-###### Pricing Comparison Chart comments
+##### Pricing Comparison Chart comments
 
-###### FAQ Comments
+##### FAQ Comments
 
-##### Tablet (768px viewport - iPadMini)[^1]
+#### Tablet (768px viewport - iPadMini)[^1]
 
-##### Mobile (430px viewport - iPhone 15 Pro Max)[^1]
+#### Mobile (430px viewport - iPhone 15 Pro Max)[^1]
 
-#### Authenticated User
+### Authenticated User
 
-##### Desktop (1400px viewport - MacBookPro M1 Pro)[^2]
+#### Desktop (1400px viewport - MacBookPro M1 Pro)[^2]
 
-##### Tablet (768px viewport - iPadMini)[^1]
+#### Tablet (768px viewport - iPadMini)[^1]
 
-##### Mobile (430px viewport - iPhone 15 Pro Max)[^1]
+#### Mobile (430px viewport - iPhone 15 Pro Max)[^1]
 
 ## General Positive Aspects of Landing Page (my bias - _strong opinions, weakly held_)
 
