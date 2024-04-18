@@ -192,10 +192,15 @@
 
 # Product Thoughts (web)
 
-- The meat and potatoes and where I would have been given feedback but when I first starting poking around I was unable to make use of the generative powers of the app because the Azure backend was generating a `502 - Bad Gateway` error that rendered the app totally unusable.
+- The meat and potatoes of PureCode.ai and where I first tried to give feedback, but when I started to poke around the web app I was unable to make use of its generative powers because the Azure backend was generating a `502 - Bad Gateway` error that rendered the app totally unusable.
 - ![](./images/bad-gateway-network-error-502.png)
+- The web app no works. I've played with it some. I'll post my feedback in a video walk along. Quick thoughts: Impressive, versioning of multi-step prompts has a lot of possibility to make this a very useful product. Web app, however, does seem a bit brittle and I find it necessary to operate always with DevTools open to obtain sufficient feedback on how the generative process is progressing. App-level crashes happen quite often, although typically a hard browser refresh enables one to continue building on previous prompt steps. At times, a new step with cause previously working functionality to vanish (ai forgetfulness is a thing)
 
 # VSCode Extension Thoughts
+
+- I installed the VSCode extension, but it's currently not publicly functional: _"We are rolling out new feature in this extension"_
+
+---
 
 [^1]: Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - I would be willing to explore in further detail if requested
 [^2]: For sake of brevity, I will avoid any nit-picky stylist observations and only focus on bugs in the UI/UX - again I am willing to explore in more detail upon request
