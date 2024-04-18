@@ -444,7 +444,7 @@ code {
 </ul>
 <p><img src="./images/page-speed-insights.png" alt=""></p>
 <ul>
-<li>Run site through a <img src="https://validator.w3.org/nu/?doc=https://purecode.ai/" alt="semantic HTML inspector"> (might be a lot of noise and not worth the effort - just including it to be thorough)</li>
+<li>Run site through a <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurecode.ai%2F">semantic HTML inspector</a> (might be a lot of noise and not worth the effort - just including it to be thorough)</li>
 </ul>
 <h2 id="body-element"><code>&lt;body&gt;</code> element</h2>
 <h3 id="unauthenticated-user">Unauthenticated User</h3>
@@ -572,12 +572,11 @@ code {
 <ul>
 <li>The meat and potatoes of PureCode.ai and where I first tried to give feedback, but when I started to poke around the web app I was unable to make use of its generative powers because the Azure backend was generating a <code>502 - Bad Gateway</code> error that rendered the app totally unusable.</li>
 <li><img src="./images/bad-gateway-network-error-502.png" alt=""></li>
-<li>The web app no works. I've played with it some. I'll post my feedback in a video walk along. Quick thoughts: Impressive, versioning of multi-step prompts has a lot of possibility to make this a very useful product. Web app, however, does seem a bit brittle and I find it necessary to operate always with DevTools open to obtain sufficient feedback on how the generative process is progressing. App-level crashes happen quite often, although typically a hard browser refresh enables one to continue building on previous prompt steps. At times, a new step with cause previously working functionality to vanish (ai forgetfulness is a thing)</li>
+<li>The web app now works. I've played with it some. I'll post my feedback in a video walk along. Quick thoughts: Impressive, versioning of multi-step prompts has a lot of possibility to make this a very useful product. Web app, however, does seem a bit brittle and I find it necessary to operate always with DevTools open to obtain sufficient feedback on how the generative process is progressing. App-level crashes happen quite often, although typically a hard browser refresh enables one to continue building on previous prompt steps. At times, a new step with cause previously working functionality to vanish (ai forgetfulness is a thing)</li>
 <li>I wonder how long the web app has been in development?</li>
 <li>It's a shame that manually editing generated code is quite buggy at the moment (difficult with cursor placement and any attempts at editing generated code leads to garbled mess.)</li>
 <li>It currently feels like a developer-level of knowledge is need by a user to extract useful functionality from the app.</li>
-<li>It would be nice to add an appropriate React error boundary to limit effected crash area when the error below takes place (caused by an attempt to access undefined fields on render (ErrorBoundary where are you?)). Hard-refresh usually allows for progress to be made.</li>
-<li>Versioning system is impress.</li>
+<li>It would be nice to add an appropriate React error boundary to limit effective crash area when the error below takes place (caused by an attempt to access undefined fields on render (<code>&lt;ErrorBoundary/&gt;</code> where are you?)). Hard-refresh usually allows for progress to be made.</li>
 </ul>
 <p><img src="./images/web-app-crashes-often.png" alt=""></p>
 <h1 id="vscode-extension-thoughts">VSCode Extension Thoughts</h1>
