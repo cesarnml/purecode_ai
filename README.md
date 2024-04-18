@@ -55,7 +55,7 @@
 
 ![](./images/page-speed-insights.png)
 
-- Run site through a ![semantic HTML inspector](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurecode.ai%2F) (might be a lot of noise and not worth the effort - just including it to be thorough)
+- Run site through a [semantic HTML inspector](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurecode.ai%2F) (might be a lot of noise and not worth the effort - just including it to be thorough)
 
 ## `<body>` element
 
@@ -194,12 +194,11 @@
 
 - The meat and potatoes of PureCode.ai and where I first tried to give feedback, but when I started to poke around the web app I was unable to make use of its generative powers because the Azure backend was generating a `502 - Bad Gateway` error that rendered the app totally unusable.
 - ![](./images/bad-gateway-network-error-502.png)
-- The web app no works. I've played with it some. I'll post my feedback in a video walk along. Quick thoughts: Impressive, versioning of multi-step prompts has a lot of possibility to make this a very useful product. Web app, however, does seem a bit brittle and I find it necessary to operate always with DevTools open to obtain sufficient feedback on how the generative process is progressing. App-level crashes happen quite often, although typically a hard browser refresh enables one to continue building on previous prompt steps. At times, a new step with cause previously working functionality to vanish (ai forgetfulness is a thing)
+- The web app now works. I've played with it some. I'll post my feedback in a video walk along. Quick thoughts: Impressive, versioning of multi-step prompts has a lot of possibility to make this a very useful product. Web app, however, does seem a bit brittle and I find it necessary to operate always with DevTools open to obtain sufficient feedback on how the generative process is progressing. App-level crashes happen quite often, although typically a hard browser refresh enables one to continue building on previous prompt steps. At times, a new step with cause previously working functionality to vanish (ai forgetfulness is a thing)
 - I wonder how long the web app has been in development?
 - It's a shame that manually editing generated code is quite buggy at the moment (difficult with cursor placement and any attempts at editing generated code leads to garbled mess.)
 - It currently feels like a developer-level of knowledge is need by a user to extract useful functionality from the app.
-- It would be nice to add an appropriate React error boundary to limit effected crash area when the error below takes place (caused by an attempt to access undefined fields on render (ErrorBoundary where are you?)). Hard-refresh usually allows for progress to be made.
-- Versioning system is impress.
+- It would be nice to add an appropriate React error boundary to limit effective crash area when the error below takes place (caused by an attempt to access undefined fields on render (`<ErrorBoundary/>` where are you?)). Hard-refresh usually allows for progress to be made.
 
 ![](./images/web-app-crashes-often.png)
 
