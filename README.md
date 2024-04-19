@@ -215,7 +215,7 @@
 # VSCode Extension Thoughts
 
 - I installed the VSCode extension, but it's currently not publicly functional: _"We are rolling out new feature in this extension"_
-- Extension released on 23 March 2024. Last updated 16 April. Alpha stage.
+- Extension released on 23 March 2024. Last updated 16 April. Pre-Alpha stage.
 
 ---
 
