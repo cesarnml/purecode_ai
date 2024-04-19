@@ -397,7 +397,7 @@ code {
 </li>
 <li><a href="#authenticated-user">Authenticated User</a>
 <ul>
-<li><a href="#desktop-1440px-viewport---macbook-air-mx2">Desktop (1440px viewport - MacBook Air MX)[^2]</a></li>
+<li><a href="#desktop-1440px-viewport---macbook-air-mx12">Desktop (1440px viewport - MacBook Air MX)[^1][^2]</a></li>
 <li><a href="#tablet-768px-viewport---ipadmini1-1">Tablet (768px viewport - iPadMini)[^1]</a></li>
 <li><a href="#mobile-430px-viewport---iphone-15-pro-max1-1">Mobile (430px viewport - iPhone 15 Pro Max)[^1]</a></li>
 </ul>
@@ -408,9 +408,9 @@ code {
 <li><a href="#bugspossible-areas-to-improvegeneral-critiques-my-bias---strong-opinions-weakly-held">Bugs/Possible Areas to Improve/General Critiques (my bias - <em>strong opinions, weakly held</em>)</a></li>
 </ul>
 </li>
-<li><a href="#product-thoughts-web---very-rough-draft-of-my-thoughts-atm">Product Thoughts (web) - (very rough draft of my thoughts atm)</a>
+<li><a href="#product-thoughts-web---very-rough-draft">Product Thoughts (web) - (very rough draft)</a>
 <ul>
-<li><a href="#product-feedback-video-10-minutes---apologizes-for-background-noise">Product Feedback Video (10 minutes - apologizes for background noise)</a></li>
+<li><a href="#product-feedback-video-10-minutes---apologizes-for-background-noise-">Product Feedback Video (10 minutes - apologizes for background noise 🙏)</a></li>
 </ul>
 </li>
 <li><a href="#why-i-would-be-a-good-hire-video-6-minutes">Why I Would Be A Good Hire Video (6 minutes)</a></li>
@@ -558,10 +558,7 @@ code {
 <h4 id="tablet-768px-viewport---ipadmini1">Tablet (768px viewport - iPadMini)[^1]</h4>
 <h4 id="mobile-430px-viewport---iphone-15-pro-max1">Mobile (430px viewport - iPhone 15 Pro Max)[^1]</h4>
 <h3 id="authenticated-user">Authenticated User</h3>
-<h4 id="desktop-1440px-viewport---macbook-air-mx2">Desktop (1440px viewport - MacBook Air MX)[^2]</h4>
-<ul>
-<li>Comments to come in a few hours</li>
-</ul>
+<h4 id="desktop-1440px-viewport---macbook-air-mx12">Desktop (1440px viewport - MacBook Air MX)[^1][^2]</h4>
 <h4 id="tablet-768px-viewport---ipadmini1">Tablet (768px viewport - iPadMini)[^1]</h4>
 <h4 id="mobile-430px-viewport---iphone-15-pro-max1">Mobile (430px viewport - iPhone 15 Pro Max)[^1]</h4>
 <h2 id="general-positive-aspects-of-landing-page-my-bias---strong-opinions-weakly-held">General Positive Aspects of Landing Page (my bias - <em>strong opinions, weakly held</em>)</h2>
@@ -571,27 +568,33 @@ code {
 </ul>
 <h2 id="bugspossible-areas-to-improvegeneral-critiques-my-bias---strong-opinions-weakly-held">Bugs/Possible Areas to Improve/General Critiques (my bias - <em>strong opinions, weakly held</em>)</h2>
 <ul>
-<li>More to come here soon.</li>
+<li>More to come here soon. (will wait to hear back before continuing to invest in this readme)</li>
+<li>When logged-in but accessing the web app through a VPN (Surfshark), I would often encounter (maybe always) a <code>403 Access Forbidden</code> error on <code>/v1/chat-ai/</code> POST and PUT request.</li>
 </ul>
-<h1 id="product-thoughts-web---very-rough-draft-of-my-thoughts-atm">Product Thoughts (web) - (very rough draft of my thoughts atm)</h1>
+<h1 id="product-thoughts-web---very-rough-draft">Product Thoughts (web) - (very rough draft)</h1>
 <ul>
 <li>The meat and potatoes of PureCode.ai and where I first tried to give feedback, but when I started to poke around the web app I was unable to make use of its generative powers because the Azure backend was generating a <code>502 - Bad Gateway</code> error that rendered the app totally unusable.</li>
 <li><img src="./images/bad-gateway-network-error-502.png" alt=""></li>
 <li>The web app now works. I've played with it some. I'll post my feedback in a video walk along. Quick thoughts: Impressive, versioning of multi-step prompts has a lot of possibility to make this a very useful product. Web app, however, does seem a bit brittle and I find it necessary to operate always with DevTools open to obtain sufficient feedback on how the generative process is progressing. App-level crashes happen quite often, although typically a hard browser refresh enables one to continue building on previous prompt steps. At times, a new step with cause previously working functionality to vanish (ai forgetfulness is a thing)</li>
 <li>I wonder how long the web app has been in development?</li>
 <li>It's a shame that manually editing generated code is quite buggy at the moment (difficult with cursor placement and any attempts at editing generated code leads to garbled mess.)</li>
+<li><s>There doesn't seem to be a method to cancel the free trial period.</s> (This has recently been fixed by proving an support email (thanks Edward!))</li>
 <li>It currently feels like a developer-level of knowledge is need by a user to extract useful functionality from the app.</li>
-<li>It would be nice to add an appropriate React error boundary to limit effective crash area when the error below takes place (caused by an attempt to access undefined fields on render (<code>&lt;ErrorBoundary/&gt;</code> where are you?)). Hard-refresh usually allows for progress to be made.</li>
+<li>It would be nice to add an appropriate React error boundary to limit effective crash area when the error below takes place (caused by an attempt to access undefined fields on render (<code>&lt;ErrorBoundary/&gt;</code> where are you?)). Hard-refresh usually allows for progress to be made.
+<img src="./images/web-app-crashes-often.png" alt=""></li>
+<li><strong>BUG FIX</strong> <code>Component History List</code> should vertically scroll when list exceeds 100vh. Possible fix: add <code>h-screen overflow-y-auto</code> to the direct parent that wraps each component list item. (refer to gif below)
+<img src="./images/component-history-list-sidebar-allow-user-to-vertically-scroll-list.gif" alt=""></li>
 </ul>
-<p><img src="./images/web-app-crashes-often.png" alt=""></p>
-<h2 id="product-feedback-video-10-minutes---apologizes-for-background-noise">Product Feedback Video (10 minutes - apologizes for background noise)</h2>
+<h2 id="product-feedback-video-10-minutes---apologizes-for-background-noise-%F0%9F%99%8F">Product Feedback Video (10 minutes - apologizes for background noise 🙏)</h2>
 <p><a href="./videos/MyCommentsOnWhyIWouldBeAGoodFirForTheFrontendDeveloperPosition.mp4">Download MP4 Video</a></p>
+<p><a href="https://youtu.be/9l7Jl_npAiI?si=4_f16gZDGE2vDq8e">YouTube Link to Video</a></p>
 <h1 id="why-i-would-be-a-good-hire-video-6-minutes">Why I Would Be A Good Hire Video (6 minutes)</h1>
 <p><a href="./videos/WebAppVideoFeedback.mp4">Download MP4 Video</a></p>
+<p><a href="https://youtu.be/bQMgHQ-I9rI?si=Cm4Cf-GMnvdmJO2q">YouTube Link to Video</a></p>
 <h1 id="vscode-extension-thoughts">VSCode Extension Thoughts</h1>
 <ul>
 <li>I installed the VSCode extension, but it's currently not publicly functional: <em>&quot;We are rolling out new feature in this extension&quot;</em></li>
-<li>Extension released on 23 March 2024. Last updated 16 April. Alpha stage.</li>
+<li>Extension released on 23 March 2024. Last updated 16 April. Pre-Alpha stage.</li>
 </ul>
 <hr>
 <p>[^1]: Thoughts not included for brevity (and given the use case for the site I suspect most users will be on a laptop) - I would be willing to explore in further detail if requested
