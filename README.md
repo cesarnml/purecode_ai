@@ -206,9 +206,13 @@
 
 [Download MP4 Video](./videos/MyCommentsOnWhyIWouldBeAGoodFirForTheFrontendDeveloperPosition.mp4)
 
+[YouTube Link to Video](https://youtu.be/9l7Jl_npAiI?si=4_f16gZDGE2vDq8e)
+
 # Why I Would Be A Good Hire Video (6 minutes)
 
 [Download MP4 Video](./videos/WebAppVideoFeedback.mp4)
+
+[YouTube Link to Video](https://youtu.be/bQMgHQ-I9rI?si=Cm4Cf-GMnvdmJO2q)
 
 # VSCode Extension Thoughts
 
