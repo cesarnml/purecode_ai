@@ -208,6 +208,7 @@
   ![](./images/component-history-list-sidebar-allow-user-to-vertically-scroll-list.gif)
 - The component examples that pop-in on scroll-down could be handled a bit more elegantly. The way they pop into view is quite jarring.
 - I might not understand, but is there no way to navigate to the web app from the landing page without requiring submitting a prompt or selecting a template-prompt?
+  - (i.e. is there no directly link on the landing page that would take be directly to `https://purecode.ai/aiprojects` ... the web app in a neutral state ... )
 - Questions:
   - What type of testing framework is in place on the frontend? (e.g. testing-library/react, playwright, vitest)
   - Are production errors being monitored via a service such as sentry.io?
