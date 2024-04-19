@@ -202,6 +202,8 @@
 - It currently feels like a developer-level of knowledge is need by a user to extract useful functionality from the app.
 - It would be nice to add an appropriate React error boundary to limit effective crash area when the error below takes place (caused by an attempt to access undefined fields on render (`<ErrorBoundary/>` where are you?)). Hard-refresh usually allows for progress to be made.
   ![](./images/web-app-crashes-often.png)
+- **BUG FIX** `Component History List` should vertically scroll when list exceeds 100vh. Possible fix: add `h-screen overflow-y-auto` to the direct parent that wraps each component list item. (refer to gif below)
+  ![](./images/component-history-list-sidebar-allow-user-to-vertically-scroll-list.gif)
 
 ## Product Feedback Video (10 minutes - apologizes for background noise 🙏)
 
