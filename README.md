@@ -22,13 +22,13 @@
       - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1)
       - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1)
     - [Authenticated User](#authenticated-user)
-      - [Desktop (1440px viewport - MacBook Air MX)\[^2\]](#desktop-1440px-viewport---macbook-air-mx2)
+      - [Desktop (1440px viewport - MacBook Air MX)\[^1\]\[^2\]](#desktop-1440px-viewport---macbook-air-mx12)
       - [Tablet (768px viewport - iPadMini)\[^1\]](#tablet-768px-viewport---ipadmini1-1)
       - [Mobile (430px viewport - iPhone 15 Pro Max)\[^1\]](#mobile-430px-viewport---iphone-15-pro-max1-1)
   - [General Positive Aspects of Landing Page (my bias - _strong opinions, weakly held_)](#general-positive-aspects-of-landing-page-my-bias---strong-opinions-weakly-held)
   - [Bugs/Possible Areas to Improve/General Critiques (my bias - _strong opinions, weakly held_)](#bugspossible-areas-to-improvegeneral-critiques-my-bias---strong-opinions-weakly-held)
-- [Product Thoughts (web) - (very rough draft of my thoughts atm)](#product-thoughts-web---very-rough-draft-of-my-thoughts-atm)
-  - [Product Feedback Video (10 minutes - apologizes for background noise)](#product-feedback-video-10-minutes---apologizes-for-background-noise)
+- [Product Thoughts (web) - (very rough draft)](#product-thoughts-web---very-rough-draft)
+  - [Product Feedback Video (10 minutes - apologizes for background noise 🙏)](#product-feedback-video-10-minutes---apologizes-for-background-noise-)
 - [Why I Would Be A Good Hire Video (6 minutes)](#why-i-would-be-a-good-hire-video-6-minutes)
 - [VSCode Extension Thoughts](#vscode-extension-thoughts)
 
@@ -175,9 +175,7 @@
 
 ### Authenticated User
 
-#### Desktop (1440px viewport - MacBook Air MX)[^2]
-
-- Comments to come in a few hours
+#### Desktop (1440px viewport - MacBook Air MX)[^1][^2]
 
 #### Tablet (768px viewport - iPadMini)[^1]
 
@@ -190,9 +188,9 @@
 
 ## Bugs/Possible Areas to Improve/General Critiques (my bias - _strong opinions, weakly held_)
 
-- More to come here soon.
+- More to come here soon. (will wait to hear back before continuing to invest in this readme)
 
-# Product Thoughts (web) - (very rough draft of my thoughts atm)
+# Product Thoughts (web) - (very rough draft)
 
 - The meat and potatoes of PureCode.ai and where I first tried to give feedback, but when I started to poke around the web app I was unable to make use of its generative powers because the Azure backend was generating a `502 - Bad Gateway` error that rendered the app totally unusable.
 - ![](./images/bad-gateway-network-error-502.png)
@@ -204,7 +202,7 @@
 
 ![](./images/web-app-crashes-often.png)
 
-## Product Feedback Video (10 minutes - apologizes for background noise)
+## Product Feedback Video (10 minutes - apologizes for background noise 🙏)
 
 [Download MP4 Video](./videos/MyCommentsOnWhyIWouldBeAGoodFirForTheFrontendDeveloperPosition.mp4)
 
