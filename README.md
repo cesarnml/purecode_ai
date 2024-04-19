@@ -175,6 +175,8 @@
 
 ### Authenticated User
 
+- Buggy interface around avatar popup in tablet or smaller viewports.
+
 #### Desktop (1440px viewport - MacBook Air MX)[^1][^2]
 
 #### Tablet (768px viewport - iPadMini)[^1]
@@ -204,6 +206,8 @@
   ![](./images/web-app-crashes-often.png)
 - **BUG FIX** `Component History List` should vertically scroll when list exceeds 100vh. Possible fix: add `h-screen overflow-y-auto` to the direct parent that wraps each component list item. (refer to gif below)
   ![](./images/component-history-list-sidebar-allow-user-to-vertically-scroll-list.gif)
+- The component examples that pop-in on scroll-down could be handled a bit more elegantly. The way they pop into view is quite jarring.
+- I might not understand, but is there no way to navigate to the web app from the landing page without requiring submitting a prompt or selecting a template-prompt?
 - Questions:
   - What type of testing framework is in place on the frontend? (e.g. testing-library/react, playwright, vitest)
   - Are production errors being monitored via a service such as sentry.io?
