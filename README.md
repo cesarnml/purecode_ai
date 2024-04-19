@@ -189,6 +189,7 @@
 ## Bugs/Possible Areas to Improve/General Critiques (my bias - _strong opinions, weakly held_)
 
 - More to come here soon. (will wait to hear back before continuing to invest in this readme)
+- When logged-in but accessing the web app through a VPN (Surfshark), I would often encounter (maybe always) a `403 Access Forbidden` error on `/v1/chat-ai/` POST and PUT request.
 
 # Product Thoughts (web) - (very rough draft)
 
