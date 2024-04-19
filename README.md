@@ -4,7 +4,6 @@
 
 - [PureCode.ai](#purecodeai)
 - [Table of Contents](#table-of-contents)
-- [\<\<\<\<\<\<\< HEAD](#-head)
 - [Landing Page Thoughts](#landing-page-thoughts)
   - [`<head>` element](#head-element)
   - [`<body>` element](#body-element)
@@ -31,8 +30,6 @@
 - [Product Thoughts (web) - (very rough draft of my thoughts atm)](#product-thoughts-web---very-rough-draft-of-my-thoughts-atm)
   - [Product Feedback Video (10 minutes - apologizes for background noise)](#product-feedback-video-10-minutes---apologizes-for-background-noise)
 - [Why I Would Be A Good Hire Video (6 minutes)](#why-i-would-be-a-good-hire-video-6-minutes)
-- [VSCode Extension Thoughts](#vscode-extension-thoughts)
-  > > > > > > > cesar/sc-318_provide-thoughts-on-purecode-ai-product-web
 - [VSCode Extension Thoughts](#vscode-extension-thoughts)
 
 # Landing Page Thoughts
@@ -209,11 +206,11 @@
 
 ## Product Feedback Video (10 minutes - apologizes for background noise)
 
-![](./videos/MyCommentsOnWhyIWouldBeAGoodFirForTheFrontendDeveloperPosition.mp4)
+[Download MP4 Video](./videos/MyCommentsOnWhyIWouldBeAGoodFirForTheFrontendDeveloperPosition.mp4)
 
 # Why I Would Be A Good Hire Video (6 minutes)
 
-![](./videos/WebAppVideoFeedback.mp4)
+[Download MP4 Video](./videos/WebAppVideoFeedback.mp4)
 
 # VSCode Extension Thoughts
 
