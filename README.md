@@ -197,10 +197,10 @@
 - The web app now works. I've played with it some. I'll post my feedback in a video walk along. Quick thoughts: Impressive, versioning of multi-step prompts has a lot of possibility to make this a very useful product. Web app, however, does seem a bit brittle and I find it necessary to operate always with DevTools open to obtain sufficient feedback on how the generative process is progressing. App-level crashes happen quite often, although typically a hard browser refresh enables one to continue building on previous prompt steps. At times, a new step with cause previously working functionality to vanish (ai forgetfulness is a thing)
 - I wonder how long the web app has been in development?
 - It's a shame that manually editing generated code is quite buggy at the moment (difficult with cursor placement and any attempts at editing generated code leads to garbled mess.)
+- ~~There doesn't seem to be a method to cancel the free trial period.~~ (This has recently been fixed by proving an support email (thanks Edward!))
 - It currently feels like a developer-level of knowledge is need by a user to extract useful functionality from the app.
 - It would be nice to add an appropriate React error boundary to limit effective crash area when the error below takes place (caused by an attempt to access undefined fields on render (`<ErrorBoundary/>` where are you?)). Hard-refresh usually allows for progress to be made.
-
-![](./images/web-app-crashes-often.png)
+  ![](./images/web-app-crashes-often.png)
 
 ## Product Feedback Video (10 minutes - apologizes for background noise 🙏)
 
