@@ -204,6 +204,11 @@
   ![](./images/web-app-crashes-often.png)
 - **BUG FIX** `Component History List` should vertically scroll when list exceeds 100vh. Possible fix: add `h-screen overflow-y-auto` to the direct parent that wraps each component list item. (refer to gif below)
   ![](./images/component-history-list-sidebar-allow-user-to-vertically-scroll-list.gif)
+- Questions:
+  - What type of testing framework is in place on the frontend? (e.g. testing-library/react, playwright, vitest)
+  - Are production errors being monitored via a service such as sentry.io?
+  - How are project iterations and feature stories structured wrt to the development team?
+  - How big is the development team? Composition?
 
 ## Product Feedback Video (10 minutes - apologizes for background noise 🙏)
 
